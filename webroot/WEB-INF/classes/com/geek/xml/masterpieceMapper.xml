@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.geek.mapper.MasterpieceMapper">
+    <resultMap id="masterpieceMap" type="com.geek.model.Masterpiece">
+        <id column="m_no" property="masterId" javaType="String" jdbcType="VARCHAR"></id>
+        <result column="m_name" property="masterName" javaType="String" jdbcType="VARCHAR"></result>
+        <result column="m_desc" property="masterDesc" javaType="String" jdbcType="VARCHAR"></result>
+        <result column="m_image" property="imagePath" javaType="String" jdbcType="VARCHAR"></result>
+        <result column="m_link" property="masterLink" javaType="String" jdbcType="VARCHAR"></result>
+    </resultMap>
+
+    <insert id="addMasterpiece" parameterType="masterpiece">
+        INSERT  INTO
+        masterpiece(m_no,m_name,m_desc,m_image,m_link)
+        VALUES
+        (#{masterId},#{masterName},#{masterDesc},#{imagePath},#{masterLink})
+    </insert>
+
+    <delete id="deleteMasterpiece" parameterType="String">
+        DELETE FROM masterpiece WHERE m_no = #{0}
+    </delete>
+
+    <delete id="deleteMasterpieces" parameterType="String">
+        DELETE FROM masterpiece WHERE m_no IN
+        <foreach collection="array" item="masterId" open="(" separator="," close=")">
+            #{masterId}
+        </foreach>
+    </delete>
+
+    <update id="updateMasterpiece" parameterType="masterpiece">
+        UPDATE masterpiece
+        SET
+        m_name = #{masterName},
+        m_desc = #{masterDesc},
+        m_image = #{imagePath},
+        m_link = #{masterLink}
+        WHERE
+        m_no = #{masterId}
+    </update>
+
+    <select id="findAllMasterpiece" resultMap="masterpieceMap">
+        SELECT
+        m_no ,m_name ,m_desc ,m_image ,m_link
+        FROM masterpiece
+    </select>
+
+    <select id="findMasterpiece" parameterType="String" resultMap="masterpieceMap">
+        SELECT
+        m_no ,m_name ,m_desc ,m_image ,m_link
+        FROM masterpiece
+        WHERE m_no = #{0}
+    </select>
+
+    <select id="findImagePath" parameterType="String" resultType="String">
+        SELECT
+        m_image
+        FROM
+        master
+        WHERE m_no = #{0}
+    </select>
+
+    <select id="findImagePaths" parameterType="String" resultType="String">
+        SELECT m_image FROM master WHERE m_no IN
+        <foreach collection="array" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </select>
+</mapper>

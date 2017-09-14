@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#find").keyup(function(){
+			$("table tbody tr")
+			.hide()
+			.filter(":contains('"+($(this).val())+"')").show();
+			if($("table tbody tr:visible").length==0){
+				alert("没有找到结果！");
+			}
+		}).keyup();
+
+	});
+</script>
+<style type="text/css">
+	td,th{
+		border-collapse:collapse;
+		width: 100px;
+	}
+	thead th{
+		border-collapse:collapse;
+		border-bottom: 1px solid black;
+	}
+</style>
+<head>
+	<title>5</title>
+</head>
+<body>
+<label for="find">筛选：</label><input type="text" id="find" name="">
+<table cellspacing="0">
+	<thead>
+	<tr>
+		<th>姓名</th>
+		<th>性别</th>
+		<th>暂住地</th>
+	</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>张哒哒</td>
+			<td>女</td>
+			<td>北京</td>
+		</tr>
+		<tr>
+			<td>李思水</td>
+			<td>女</td>
+			<td>四川成都</td>
+		</tr>
+		<tr>
+			<td>张四水</td>
+			<td>男</td>
+			<td>浙江温州</td>
+		</tr>
+		<tr>
+			<td>苏珊</td>
+			<td>女</td>
+			<td>湖南长沙</td>
+		</tr>
+		<tr>
+			<td>齐飞</td>
+			<td>男</td>
+			<td>浙江杭州</td>
+		</tr>
+		<tr>
+			<td>马谡</td>
+			<td>女</td>
+			<td>重庆</td>
+		</tr>
+		<tr>
+			<td>李家沱</td>
+			<td>男</td>
+			<td>江苏南京</td>
+		</tr>
+		<tr>
+			<td>王三</td>
+			<td>男</td>
+			<td>浙江杭州</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

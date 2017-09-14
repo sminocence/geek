@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Geek网工作室</title>
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/aja.js"></script>
+	<script type="text/javascript" src="js/memberxq.js"></script>
+	<script type="text/javascript" src="js/joinUs.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
+    <!-- <script type="text/javascript" src="js/ZoomPic.js"></script> -->
+ 	<link rel="stylesheet" type="text/css" href="css/GEEK.css"> 
+    <link rel="stylesheet" type="text/css" href="css/joinUs.css">
+	<link rel="stylesheet" type="text/css" href="css/memberxq.css">
+    <link rel="stylesheet" type="text/css" href="css/aja.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+</head>
+<body>
+
+<!-- logo+导航 -->
+
+<div id="Logonav" class="Logonav">
+	<a href="#pictrue"><img src="img/猿猴loigo.jpg"></a>
+	<ul class="nav">
+		<li><a href="#Index">首页</a></li>
+		<li><a href="#Home_describe">工作室简介</a></li>
+		<li><a href="#our_team">部门介绍</a></li>
+		<li><a href="#member_describe">成员介绍</a></li>
+		<li><a href="#works_show">作品展示</a></li>
+		<li><a href="#graduate_go">毕业去向</a></li>
+		<li><a href="#learn_town">学习家园</a></li>
+		<li><a href="#join_us">加入我们</a></li>
+	</ul>
+</div>
+
+<!-- 首页 -->
+
+<div id="Index">
+    <!--图片区-->
+    <div id="pictrue">
+        <img src="img/SelfieCity_20170221175733_save.jpg">
+        <img src="img/SelfieCity_20170221180308_save.jpg">
+        <!-- <img src="images/post1.jpg"> -->
+    </div>
+    <!--按钮-->
+    <ul id="bbon">
+        <li index="1" class="oon"></li>
+        <li index="2"></li>
+        <!-- <li index="3"></li> -->
+    </ul>
+    <a href="javascript:;" class="arrow" id="par">&lt;</a>
+    <a href="javascript:;" class="arrow" id="pare">&gt;</a>
+</div>
+
+<!-- 工作室简介 -->	          
+
+<div id="Home_describe" class="Home_describe">
+    <div class="home_box">
+        <div class="sectionDivider">
+            <h2 id="servicestitle">工作室简介</h2>
+            <a id="portfolio" class="sroll"></a>
+        </div>
+        <a href="#Index" class="aa">
+        <!-- 书的主体 -->
+            <div class="book preserve-3d">
+                <!-- 书的最后一页 -->
+                <div class="book-page-box book-page-4 preserve-3d">
+                    <div class="book-page page-front">
+                        <p><img src="img/SelfieCity_20170221175939_save.jpg"></p>
+                    </div>
+                </div>
+                <!-- 书的第三页 -->
+                <div class="book-page-box book-page-3 preserve-3d flip-animation-3">
+                    <div class="book-page page-front">
+                        <p><img src="img/SelfieCity_20170221180412_save.jpg"></p>
+                    </div>
+                </div>
+                
+                <div class="book-page-box book-page-3 preserve-3d flip-animation-3">
+                    <div class="book-page page-front">
+                        <p><img src="img/SelfieCity_20170221180042_save.jpg"></p>
+                    </div>
+                </div>
+                <!-- 书的第二页 -->
+                <div class="book-page-box book-page-2 preserve-3d flip-animation-2">
+                    <div class="book-page page-front">
+                        <p><img src="img/SelfieCity_20170221182247_save.jpg"></p>
+                    </div>
+                </div>
+                <!-- 书的封面 -->
+                <div class="book-page-box book-page-1 preserve-3d flip-animation-1">
+                    <div class="book-page page-front">
+                        <p>
+                            Geek网工作室
+                            <br>
+                            修炼秘籍
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <p class="Homefont">
+            "极客网"工作室（原校当网）成立于2007年，是在经济管理学院实验中心指导下的进行系统设计、网站开发及运营的团队，其工作室位于经管学院2306室。 "极客网"多年来培养了一大批IT人才，设计开发出许多优秀的项目。其下设美工、Web前台、Web后台、网站运营四个小组，主要学习和运用PS+HTML+ CSS+JS+Java+Mysql、Linux+Apache+Mysql+PHP（LAMP）以及Android手机开发等技术。成员毕业后，有90%就业于腾讯、阿里巴巴、 百度、华为等知名企业。极客网在老师和同学的共同努力下，不断发展和壮大，欢迎有兴趣和志向的同学积极加入我们，共创美好未来!
+       </p>
+    </div>
+</div>
+
+<!-- 部门介绍 -->	
+
+<div id="our_team" class="our_team">
+	<!-- 我们的团队 -->
+    <!-- 我们的团队分隔线 -->
+    <div class="sectionDivider">
+        <h2 id="servicestitle">部门介绍</h2>
+        <a id="portfolio" class="sroll"></a>
+    </div>
+    <!-- 我们的团队主体内容 -->
+    <div id="team">
+        <!-- 我们的团队单个介绍  指导老师-->
+        <!-- <div class="teamWrapper">
+            <div class="item">
+                <div class="teamIntro">
+                    <img src="images/teamIntro.jpg"/>       
+                    <span class="teamText">
+                        <h4>指导老师</h4>
+                        指导老师指导老师指导老师指导老师
+                    </span>
+                </div>
+                <span class="information">
+                  <strong>指导老师</strong>指导老师指导老师指导老师指导老师指导老师
+                </span>
+            </div>
+        </div>
+        <div class="teamWrapper">
+            <div class="item">
+                <div class="teamIntro">
+                    <img src="images/teamIntro.jpg"/>       
+                    <span class="teamText">
+                        <h4>前端</h4>
+                        前端前端前端前端前端
+                    </span>
+                </div>
+                <span class="information">
+                  <strong>前端组长</strong>
+                  前端前端前端前端前端前端前端
+                </span>
+            </div>
+        </div>
+        <div class="teamWrapper">
+            <div class="item">
+                <div class="teamIntro">
+                    <img src="images/teamIntro.jpg"/>       
+                    <span class="teamText">
+                        <h4>后台组长</h4>
+                        后台后台后台后台后台后台
+                    </span>
+                </div>
+                <span class="information">
+                  <strong>后台</strong>后台后台后台后台后台后台后台后台后台后台后台后台
+                </span>
+            </div>
+        </div>
+        <div class="teamWrapper">
+            <div class="item">
+                <div class="teamIntro">
+                    <img src="images/teamIntro.jpg"/>       
+                    <span class="teamText">
+                        <h4>IOS组长</h4>
+                        IOSIOSIOSIOSIOSIOSIOS
+                    </span>
+                </div>
+                <span class="information">
+                  <strong>IOS</strong>
+                  IOSIOSIOSIOSIOSIOSIOS
+                </span>
+            </div>
+        </div>
+        <div class="teamWrapper">
+            <div class="item">
+                <div class="teamIntro">
+                    <img src="images/teamIntro.jpg"/>       
+                    <span class="teamText">
+                        <h4>安卓组长</h4>
+                        安卓安卓安卓安卓安卓
+                    </span>
+                </div>
+                <span class="information">
+                  <strong>安卓</strong>
+                  安卓安卓安卓安卓安卓安卓
+                </span>
+            </div>
+        </div>
+        <div class="teamWrapper">
+            <div class="item">
+                <div class="teamIntro">
+                    <img src="images/teamIntro.jpg"/>       
+                    <span class="teamText">
+                        <h4>美工组长</h4>
+                        美工美工美工美工美工美工
+                    </span>
+                </div>
+                <span class="information">
+                  <strong>美工</strong>美工美工美工美工美工美工美工美工美工美工美工美工
+                </span>
+            </div>
+        </div>  -->
+    </div>   
+</div>
+
+<!-- 成员介绍 -->
+
+<div id="member_describe" class="member_describe">
+    <div class="sectionDivider">
+        <h2 id="servicestitle">成员介绍</h2>
+        <a id="portfolio" class="sroll"></a>
+    </div>
+	<!-- 成员图片部分 -->
+    <div class="member_photos">
+        <!-- <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member4.jpg" class="member_img">
+                <p class="member_intro">曾庆仲</p>
+            </div>          
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member4.jpg" class="member_img">
+                <p class="member_intro">曾庆仲</p>
+            </div>     
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member4.jpg" class="member_img">
+                <p class="member_intro">曾庆仲</p>
+            </div>
+        </li>     
+        <li class="member_photo"> 
+            <div class="in">
+                <img src="member_image/member4.jpg" class="member_img">
+                <p class="member_intro">曾庆仲</p>
+            </div>   
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member4.jpg" class="member_img">
+                <p class="member_intro">曾庆仲</p>
+            </div>   
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member4.jpg" class="member_img">
+                <p class="member_intro">曾庆仲</p>
+            </div>   
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member4.jpg" class="member_img">
+                <p class="member_intro">曾庆仲</p>
+            </div>   
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member4.jpg" class="member_img">
+                <p class="member_intro">曾庆仲</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member4.jpg" class="member_img">
+                <p class="member_intro">曾庆仲</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member4.jpg" class="member_img">
+                <p class="member_intro">曾庆仲</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member4.jpg" class="member_img">
+                <p class="member_intro">曾庆仲</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member3.jpg" class="member_img">
+                <p class="member_intro">刘奇</p>
+            </div>       
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member3.jpg" class="member_img">
+                <p class="member_intro">刘奇</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member3.jpg" class="member_img">
+                <p class="member_intro">刘奇</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member3.jpg" class="member_img">
+                <p class="member_intro">刘奇</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member3.jpg" class="member_img">
+                <p class="member_intro">刘奇</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member3.jpg" class="member_img">
+                <p class="member_intro">刘奇</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member3.jpg" class="member_img">
+                <p class="member_intro">刘奇</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member2.jpg" class="member_img">
+                <p class="member_intro">黄静</p>
+            </div>     
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member2.jpg" class="member_img">
+                <p class="member_intro">黄静</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member2.jpg" class="member_img">
+                <p class="member_intro">黄静</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member2.jpg" class="member_img">
+                <p class="member_intro">黄静</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member2.jpg" class="member_img">
+                <p class="member_intro">黄静</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member2.jpg" class="member_img">
+                <p class="member_intro">黄静</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member1.jpg" class="member_img">
+                <p class="member_intro">高翔</p>
+            </div>         
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member1.jpg" class="member_img">
+                <p class="member_intro">高翔</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member1.jpg" class="member_img">
+                <p class="member_intro">高翔</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member1.jpg" class="member_img">
+                <p class="member_intro">高翔</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member1.jpg" class="member_img">
+                <p class="member_intro">高翔</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member1.jpg" class="member_img">
+                <p class="member_intro">高翔</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member1.jpg" class="member_img">
+                <p class="member_intro">高翔</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member1.jpg" class="member_img">
+                <p class="member_intro">高翔</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member1.jpg" class="member_img">
+                <p class="member_intro">高翔</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member1.jpg" class="member_img">
+                <p class="member_intro">高翔</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member1.jpg" class="member_img">
+                <p class="member_intro">高翔</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member1.jpg" class="member_img">
+                <p class="member_intro">高翔</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member1.jpg" class="member_img">
+                <p class="member_intro">高翔</p>
+            </div>
+        </li>
+        <li class="member_photo">
+            <div class="in">
+                <img src="member_image/member1.jpg" class="member_img">
+                <p class="member_intro">高翔</p>
+            </div>
+        </li>          -->
+    </div>
+</div>
+
+<!-- 作品展示 -->
+
+<div class="works_show" id="works_show">
+	<div class="sectionDivider">
+        <h2 id="servicestitle">作品展示</h2>
+        <a id="portfolio" class="sroll"></a>
+    </div>
+    <div id="content" class="content">
+        <div id="jswbox">
+            <pre class="prev">></pre>
+            <pre class="next"><</pre>
+            <ul>
+                <!--<li id="one0"><img src="img/1.jpg"/></li>
+                <li id="one1"><img src="img/2.jpg"/></li>
+                <li id="one2"><img src="img/3.jpg"/></li>
+                <li id="one3"><img src="img/4.jpg"/></li>
+                <li id="one4"><img src="img/5.jpg"/></li>
+                <li id="one5"><img src="img/6.jpg"/></li>
+                <li id="one6"><img src="img/7.jpg"/></li>-->
+            </ul>
+        </div>
+        <div id="cont_one_0" class="introduce block">
+            <!-- <div class="companyImage">
+                <img src="img/头像.png" width="200px" height="200px">
+                <div class="quotehover">
+                    <h5>介绍介绍介绍介绍介绍介绍介绍介绍</h5>
+                    <h6>introduce</h6>
+                </div>
+            </div>
+            <div class="info">
+                <a href="#"><h2>极客网</h2></a>
+                <p>hhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+                <div class="socialicon">
+                    <a class="socialicon G" href="#"></a>
+                    <a class="socialicon E" href="#"></a>
+                    <a class="socialicon E" href="#"></a>
+                    <a class="socialicon K" href="#"></a>
+                </div>
+            </div> -->
+        </div>
+        <div id="cont_one_1" class="introduce">
+            <!-- <div class="companyImage">
+                <img src="img/头像.png" width="200px" height="200px">
+                <div class="quotehover">
+                    <h5>介绍介绍介绍介绍介绍介绍介绍介绍</h5>
+                    <h6>introduce</h6>
+                </div>
+            </div>
+            <div class="info">
+                <a href="#"><h2>极客网</h2></a>
+                <p>xxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                <div class="socialicon">
+                    <a class="socialicon G" href="#"></a>
+                    <a class="socialicon E" href="#"></a>
+                    <a class="socialicon E" href="#"></a>
+                    <a class="socialicon K" href="#"></a>
+                </div>
+            </div> -->
+        </div>
+        <div id="cont_one_2" class="introduce">
+            <!--<div class="companyImage">
+                <img src="img/头像.png" width="200px" height="200px">
+                <div class="quotehover">
+                    <h5>介绍介绍介绍介绍介绍介绍介绍介绍</h5>
+                    <h6>introduce</h6>
+                </div>
+            </div>
+            <div class="info">
+                <a href="#"><h2>极客网</h2></a>
+                <p>qqqqqqqqqqqqqqqqqqqqq</p>
+                <div class="socialicon">
+                    <a class="socialicon G" href="#"></a>
+                    <a class="socialicon E" href="#"></a>
+                    <a class="socialicon E" href="#"></a>
+                    <a class="socialicon K" href="#"></a>
+                </div>
+            </div>-->
+        </div>
+        <div id="cont_one_3" class="introduce">
+            <!--<div class="companyImage">
+                <img src="img/头像.png" width="200px" height="200px">
+                <div class="quotehover">
+                    <h5>介绍介绍介绍介绍介绍介绍介绍介绍</h5>
+                    <h6>introduce</h6>
+                </div>
+            </div>
+            <div class="info">
+                <a href="#"><h2>极客网</h2></a>
+                <p>gggggggggggggggggggggggggggggggg</p>
+                <div class="socialicon">
+                    <a class="socialicon G" href="#"></a>
+                    <a class="socialicon E" href="#"></a>
+                    <a class="socialicon E" href="#"></a>
+                    <a class="socialicon K" href="#"></a>
+                </div>
+            </div>-->
+        </div>
+        <div id="cont_one_4" class="introduce">
+            <!--<div class="companyImage">
+                <img src="img/头像.png" width="200px" height="200px">
+                <div class="quotehover">
+                    <h5>介绍介绍介绍介绍介绍介绍介绍介绍</h5>
+                    <h6>introduce</h6>
+                </div>
+            </div>
+            <div class="info">
+                <a href="#"><h2>极客网</h2></a>
+                <p>eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+                <div class="socialicon">
+                    <a class="socialicon G" href="#"></a>
+                    <a class="socialicon E" href="#"></a>
+                    <a class="socialicon E" href="#"></a>
+                    <a class="socialicon K" href="#"></a>
+                </div>
+            </div>-->
+        </div>
+        <div id="cont_one_5" class="introduce">
+            <!--<div class="companyImage">
+                <img src="img/头像.png" width="200px" height="200px">
+                <div class="quotehover">
+                    <h5>介绍介绍介绍介绍介绍介绍介绍介绍</h5>
+                    <h6>introduce</h6>
+                </div>
+            </div>
+            <div class="info">
+                <a href="#"><h2>极客网</h2></a>
+                <p>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+                <div class="socialicon">
+                    <a class="socialicon G" href="#"></a>
+                    <a class="socialicon E" href="#"></a>
+                    <a class="socialicon E" href="#"></a>
+                    <a class="socialicon K" href="#"></a>
+                </div>
+            </div>-->
+        </div>
+        <div id="cont_one_6" class="introduce">
+        <!--<div class="companyImage">
+            <img src="img/头像.png" width="200px" height="200px">
+            <div class="quotehover">
+                <h5>介绍介绍介绍介绍介绍介绍介绍介绍</h5>
+                <h6>introduce</h6>
+            </div>
+        </div>
+        <div class="info">
+            <a href="#"><h2>极客网</h2></a>
+            <p>dddddddddddddddddddddddddddddddddddddd</p>
+            <div class="socialicon">
+                <a class="socialicon G" href="#"></a>
+                <a class="socialicon E" href="#"></a>
+                <a class="socialicon E" href="#"></a>
+                <a class="socialicon K" href="#"></a>
+            </div>-->
+        </div>
+            <div id="cont_one_7" class="introduce">
+                <!--<div class="companyImage">
+                    <img src="img/头像.png" width="200px" height="200px">
+                    <div class="quotehover">
+                        <h5>介绍介绍介绍介绍介绍介绍介绍介绍</h5>
+                        <h6>introduce</h6>
+                    </div>
+                </div>
+                <div class="info">
+                    <a href="#"><h2>极客网</h2></a>
+                    <p>dddddddddddddddddddddddddddddddddddddd</p>
+                    <div class="socialicon">
+                        <a class="socialicon G" href="#"></a>
+                        <a class="socialicon E" href="#"></a>
+                        <a class="socialicon E" href="#"></a>
+                        <a class="socialicon K" href="#"></a>
+                    </div>
+                </div>-->
+            </div>
+    </div>
+    </div>
+        
+        <!-- <div class="containerWrap-w">
+            <div class="company-left">
+                <div class="introduce">
+                    <div class="companyImage">
+                        <img src="img/头像.png" width="150px" height="150px">
+                        <div class="quotehover">
+                            <h5>介绍介绍介绍介绍介绍介绍介绍介绍</h5>
+                            <h6>introduce</h6>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="#"><h2>极客网</h2></a>
+                        <p>介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</p>
+                        <div class="socialicon"></div>
+                        <a class="socialicon G" href="#"></a>
+                        <a class="socialicon E" href="#"></a>
+                        <a class="socialicon E" href="#"></a>
+                        <a class="socialicon K" href="#"></a>
+                    </div>
+                </div>    
+            </div>
+        </div> -->
+    </div>
+</div>
+
+<!-- 毕业去向 -->
+
+<div class="graduate_go" id="graduate_go">
+	<div class="sectionDivider">
+        <h2 id="servicestitle">毕业去向</h2>
+        <a id="portfolio" class="sroll"></a>
+    </div>
+    <div id="content" class="content">
+        <div class="containerWrap">
+            <div class="div-left">
+                 <table>
+                    <tbody>
+                        <!--<tr><td class="name">极客网</td><td class="grade">2015</td><td><a href="#">极客网工作室极客网</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>-->
+                    </tbody>
+                </table>
+                <!--<table>
+                    <tbody>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室极客网</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                    </tbody>
+                </table>
+            </div>-->
+            <div class="div-center">
+                <!--<table>
+                    <tbody>
+                        <tr><td width="30%">极客网</td><td width="20%">2015</td><td><a href="#">极客网工作室极客网极客网</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室极客网极客网</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr><td width="30%">极客网</td><td width="20%">2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                    </tbody>
+                </table>-->
+                <!-- <table>
+                    <tbody>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室极客网</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                    </tbody>
+                </table> -->
+            </div>
+            <div class="div-right">
+                <!--<table>
+                    <tbody>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                    </tbody>
+                </table>-->
+                <!-- <table>
+                    <tbody>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室极客网</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                        <tr><td>极客网</td><td>2015</td><td><a href="#">极客网工作室</a></td></tr>
+                    </tbody>
+                </table> -->
+            </div>
+        </div>
+    </div>
+</div>	
+
+<!-- 学习家园 -->	
+
+<div class="learn_town" id="learn_town">
+	<div class="sectionDivider">
+        <h2 id="servicestitle">学习家园</h2>
+        <a id="portfolio" class="sroll"></a>
+    </div>
+    <div class="study">
+        <!--学习家园（导航栏）-->
+    	<div class="studyNav">
+            <div class="studyBook studyTit" name="studyBook" val="书籍">书籍</div>
+		    <div class="studyWeb studyTit" name="studyWeb" val="book">网站</div>
+		    <div class="studyBlog studyTit" name="studyBlog" val="博客">博客</div>
+    	</div>
+    	<!--学习家园（具体信息）-->
+		<ul class="studyIntro">
+            <!-- <li>
+                <img src="images/teamIntro.jpg" class="studyImg">
+                <div class="studyText">
+                    <p>书名：xxxxxxxxx</p>
+                    <p>作者:xxxxxxxx</p>
+                    <p>出版社：xxxxxxx</p>
+                    <p class="studySum">概要：xxxxxxxxxxxx</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/teamIntro.jpg" class="studyImg">
+                <div class="studyText">
+                    <p>书名：xxxxxxxxx</p>
+                    <p>作者:xxxxxxxx</p>
+                    <p>出版社：xxxxxxx</p>
+                    <p class="studySum">概要：xxxxxxxxxxxx</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/teamIntro.jpg" class="studyImg">
+                <div class="studyText">
+                    <p>书名：xxxxxxxxx</p>
+                    <p>作者:xxxxxxxx</p>
+                    <p>出版社：xxxxxxx</p>
+                    <p class="studySum">概要：xxxxxxxxxxxx</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/teamIntro.jpg" class="studyImg">
+                <div class="studyText">
+                    <p>书名：xxxxxxxxx</p>
+                    <p>作者:xxxxxxxx</p>
+                    <p>出版社：xxxxxxx</p>
+                    <p class="studySum">概要：xxxxxxxxxxxx</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/teamIntro.jpg" class="studyImg">
+                <div class="studyText">
+                    <p>书名：xxxxxxxxx</p>
+                    <p>作者:xxxxxxxx</p>
+                    <p>出版社：xxxxxxx</p>
+                    <p class="studySum">概要：xxxxxxxxxxxx</p>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+</div>
+     
+<!-- 加入我们 -->
+
+<div id="join_us" class="join_us">
+    <!-- 分割线 -->
+    <div class="sectionDivider">
+        <h2 id="servicestitle">加入我们</h2>
+        <a id="portfolio" class="sroll"></a>
+    </div>
+    <!-- 内容 -->
+    <div class="joinus_content">
+            <div class="joinus_Lcontent">
+                <form method="post" id="join_form">
+                    <ul>
+                        <li>
+                            <span class="join_info">姓名</span> 
+                            <input type="text" class="text" id="userName" name="userName" placeholder="请输入你的真实姓名"/>
+                            <span class="spinfo" id="name_info"></span>
+                        </li>
+                        <li>
+                            <span class="join_info">学号</span>
+                            <input type="text" class="text" id="userId" name="userId" placeholder="请输入你的学号"/>
+                            <span class="spinfo" id="id_info"></span>
+                        </li>
+                        <li>
+                            <span class="join_info">电话</span>
+                            <input type="text" class="text" id="userPhone" name="userPhone" placeholder="请输入你的电话号码"/>
+                            <span class="spinfo" id="phone_info"></span>
+                        </li>
+                        <li>
+                            <span class="join_info">邮箱</span>
+                            <input type="text" class="text" id="userEmail" name="userEmail" placeholder="请输入你的邮箱地址"/>
+                            <span class="spinfo" id="email_info"></span>
+                        </li>
+                    </ul>   
+                    <div class="submit">
+                        <input type="button" value="提交" class="sub" id="submit">
+                        <input type="reset" value="清除" class="sub" id="reset">
+                    </div>
+                </form>
+                <!-- 加入我们的遮罩层 -->
+                <!-- <div class="joinus_cover">
+                    <h2>报名已截止</h2>             
+                </div> -->
+            </div>
+            
+            <!-- 内容之右边 -->
+            <div class="joinus_Rigcontent">
+                <a href="https://jq.qq.com/?_wv=1027&k=45M5y5b">
+                    <img src="img/QRcode.png">
+                </a>
+                <p class="joinus_code">扫描二维码加入我们</p>
+            </div>               
+    </div>
+    <div class="section_divider_bottom"></div>
+    <!-- 尾部版权声明 -->
+    <div class="footer">
+        <ul class="footer_top">
+            <li>版权所有</li>
+            <li>|</li>
+            <li>重庆邮电大学极客网工作室</li>
+            <li>|</li>
+            <li><a href="suggestHHG.html">意见反馈</a></li>
+        </ul>      
+        <p class="footer_bottom">重庆市南岸区崇文路2号邮电大学经济管理学院</p>           
+    </div>
+</div>	
+
+</body>
+</html>

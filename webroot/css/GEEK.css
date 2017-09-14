@@ -1,0 +1,260 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: Microsoft YaHei;
+}
+
+img {
+	border: 0;
+}
+h2 {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	line-height: 1em;
+	color: #454544;
+	/*text-decoration: none;*/
+	font-size: 20px;
+}
+
+/*主体*/
+.content {
+	width: 100%; 
+	overflow: hidden;
+	/*background-color: #aaaaaa;*/
+}
+
+/*分隔线*/
+.sectionDivider {
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid #6093e7;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.sectionDivider h2 {
+	font-weight: 400;
+	color: #6093e7;
+	background-color: #FFF;
+	margin-top: -15px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+.sectionDivider a {
+	outline: none;
+}
+
+/*workshow*/
+.containerWrap-w {
+	max-width: 960px;
+	width: 80%;
+	margin: 0px auto;
+	position: relative;
+	/*background-color: #111111;*/
+}
+.company-left {
+	width: 45%;
+	height: auto;
+	padding: 0 2%;
+	float: left;
+	position: relative;
+	/*background-color: #555555;*/
+}
+.introduce {
+	width: 100%;
+	height: 200px;
+	display: none;
+}
+.content .block {
+	display: block;
+}
+.companyImage {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-left: 300px;
+}
+.quotehover {
+	cursor: pointer;
+	display: none;
+	position: relative;
+	margin-top: -204px;
+	left: 0px;
+	width: 200px;
+	height: 200px;
+	background-image: url(../img/index.png);
+	background-repeat: no-repeat;
+	background-color: rgba(96,147,231,0.6);
+}
+.quotehover h5 {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	padding-top: 50px;
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+}
+.quotehover h6 {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 10px;
+	color: #ffffff;
+	text-align: center;
+}
+.info {
+	position: relative;
+	width: 270px;
+	float: left;
+	margin-top: 17px;
+	margin-left: 30px;
+}
+.info a {
+	text-decoration: none;
+}
+.info a:hover{
+	text-decoration: none;
+}
+.info h2:hover {
+	color: #6093e7;
+	/*text-decoration: none;*/
+} 
+.info p {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	line-height: 1.3em;
+	color: #848484;
+	font-size: 12px;
+	word-wrap:break-word; 
+	word-break:normal;
+	/*text-indent: 2em;*/
+}
+a.socialicon {
+	position: relative;
+	background-image: url(../img/GEEK.png);
+	background-repeat: no-repeat;
+	display: block;
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin: 0px 10px 0px 0px;
+}
+a.socialicon.G {
+	background-position: 0px 0px;
+}
+a.socialicon.E {
+	background-position: -26px 0px;
+}
+a.socialicon.K {
+	background-position: -78px 0px;
+}
+.company-right {
+	width: 45%;
+	height: auto;
+	padding: 0 2%;
+	float: right;
+	position: relative;
+	/*background-color: #555555;*/
+}
+
+/*graduation*/
+.containerWrap {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0px auto;
+	position: relative;
+	/*background-color: #c2a0c6;*/
+}
+.div-left {
+	width: 33.3%;
+	height: auto;
+	float: left;
+	position: relative;
+	/*background-color: #c2a0c6;*/
+}
+.div-center {
+	margin-left: 1px;
+	width: 33.3%;
+	height: auto;
+	float: left;
+	position: relative;
+	/*background-color: #c2a0c6;*/
+}
+.div-right {
+	width: 33.2%;
+	height: auto;
+	float: right;
+	position: relative;
+	/*background-color: #c2a0c6;*/
+}
+table {
+	width: 333px;
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: none;
+	margin: none;
+	padding: 0px;
+	margin-bottom: 10px;
+	table-layout: fixed;
+}
+td {
+	/*width: 100px;*/
+	text-align: center;
+	font-size: 14px;
+	/*padding: 2px 15px;*/
+	color: #000000;
+	line-height: 34px;
+	word-break:keep-all;/* 不换行 */
+    white-space:nowrap;/* 不换行 */
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+td a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 14px;
+	/*padding: 2px 15px;*/
+}
+td a:hover{
+	text-decoration: none;
+}
+.even {
+	background-color: #bcd6f3;
+}
+.odd {
+	background-color: #a6c3e4;
+}
+.hover {
+	background-color: #addff4;
+}
+
+
+#jswbox{
+	width:1100px;
+	height:350px;
+	margin:0 auto;
+	position:relative;
+}
+#jswbox ul{
+	position:relative;
+	/*height:600px;*/
+}
+#jswbox li{
+	position:absolute;
+	width:0;
+	height:0;
+	z-index:0;
+	cursor:pointer;
+	overflow:hidden;
+	/*top:152px;*/
+	left:10px;
+}
+#jswbox li img{
+	width:100%;
+	height:100%;
+	vertical-align:top;
+	float:left;
+}
+#jswbox .prev, #jswbox .next{
+	display:none;
+}

@@ -1,0 +1,251 @@
+body {
+  font-family: 微软雅黑;
+}
+a{
+	text-decoration:none; 
+}
+li{
+  list-style: none;
+}
+/*分隔线*/
+.sectionDivider {
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid #6093e7;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.sectionDivider h2{
+  font-weight: 400;
+  color: #6093e7;
+  background-color: #FFF;
+  margin-top: -15px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.sectionDivider a {
+  outline: none;
+}
+/*我们的团队*/
+h1, em, #information {
+  display: block;
+	font-size: 25px;
+	font-weight: normal;
+	margin: 2em auto;
+}
+a{
+  color: #414142;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 20px;
+}	
+a:hover{
+   text-decoration: underline;
+}	
+
+/*团队个人介绍排版 */
+#team{
+  width: 1024px;
+  margin: 0px auto;
+}  
+.teamWrapper{
+  display: inline-block;
+	width: 310px;
+  height: 130px;
+	vertical-align: top;
+  margin: 16px 24px 32px 0px;
+	cursor: pointer;
+	position: relative;
+  /*定义3D元素距离视图的距离*/
+	-webkit-perspective: 4000px;
+	-moz-perspective: 4000px;
+	-ms-perspective: 4000px;
+	-o-perspective: 4000px;
+	perspective: 4000px;
+}
+.item {
+  height: 130px;
+  /*使被转换的子元素保留其 3D 转换（IE不适用）*/
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+  /*转换时图像进行时间（IE10之前不适用）*/
+	-webkit-transition: -webkit-transform .6s;
+	-moz-transition: -moz-transform .6s;
+	-ms-transition: -ms-transform .6s;
+	-o-transition: -o-transform .6s;
+	transition: transform .6s;
+}
+.item:hover {
+    -webkit-transform: translateZ(-50px) rotateX(95deg);
+    -moz-transform: translateZ(-50px) rotateX(95deg);
+    -ms-transform: translateZ(-50px) rotateX(95deg);
+    -o-transform: translateZ(-50px) rotateX(95deg);
+    transform: translateZ(-50px) rotateX(95deg);
+}
+   
+.item .teamIntro {
+   display: block;
+   position: absolute;
+   top: 0;
+   border-radius: 3px;
+   box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+   -webkit-transform: translateZ(50px);
+   -moz-transform: translateZ(50px);
+   -ms-transform: translateZ(50px);
+   -o-transform: translateZ(50px);
+   transform: translateZ(50px);
+   -webkit-transition: all .6s;
+   -moz-transition: all .6s;
+   -ms-transition: all .6s;
+   -o-transition: all .6s;
+   transition: all .6s;
+   width: 310px; 
+   height: 130px;
+ } 
+ .item .information {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 146px;
+    width: 290px;
+    text-align: left;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+    box-shadow: none;
+    /*background: rgb(236,241,244);*/
+    background-color: #6093E7;
+    background: -webkit-linear-gradient(to bottom,  rgba(236,241,244,1) 0%,rgba(190,202,217,1) 100%);
+    background: -ms-linear-gradient(to bottom,  rgba(236,241,244,1) 0%,rgba(190,202,217,1) 100%);
+    background: linear-gradient(to bottom,  rgba(236,241,244,1) 50%,rgba(190,202,217,1) 100%);
+    background: -o-linear-gradient(to bottom,  rgba(236,241,244,1) 50%,rgba(190,202,217,1) 100%);
+    -webkit-transform: rotateX(-90deg) translateZ(50px);
+    -moz-transform: rotateX(-90deg) translateZ(50px);
+    -ms-transform: rotateX(-90deg) translateZ(50px);
+    -o-transform: rotateX(-90deg) translateZ(50px);
+    transform: rotateX(-90deg) translateZ(50px);
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -ms-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+ }
+    
+ .information strong {
+    display: block;
+    margin: .2em 0 .5em 0;
+    font-size: 20px;
+    font-family: "Oleo Script";
+  }
+.item:hover .teamIntro {
+    box-shadow: none;
+    border-radius: 15px;
+}
+      
+.item:hover .information {
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+    border-radius: 3px;
+ }
+.teamIntro img{
+  margin: 4px 0px 4px 4px;
+  height: 122px;
+  width: 100px;
+}
+.teamText{
+  float: right;
+  width: 170px;
+  height: 130px;
+  margin-right: 20px;
+}
+.teamText h4{
+  margin: 4px auto 4px;
+  padding: 0px;
+}
+/*学习家园*/
+
+.study{
+    height: 560px;
+    overflow: hidden;
+}
+/*学习家园(导航)*/
+.studyNav{
+	height: 100px;
+  width: 300px;
+  margin: 0px auto 100px;
+}
+/*学习家园(导航题目)*/
+.studyTit{
+	height: 100px;
+	width: 100px;
+  cursor:pointer;
+	background-color: #6093e7;
+	border-radius: 50%;
+	display:block;
+	float: left;
+	margin:0px auto;
+	color:#fff;
+	text-align:center;
+	line-height:100px;
+	font-size:20px;
+	font-weight:bold;
+	transition: 0.4s ease-in;
+  -webkit-transition:All 0.4s ease-in;
+  -moz-transition:All 0.4s ease-in;
+  -o-transition:All 0.4s ease-in;
+}
+/*学习家园(导航题目:触发)*/
+.studyTit:hover{
+	transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+}
+/*学习家园(具体信息)*/
+.studyIntro{
+	margin: auto;
+	width: 1100px;
+	height: 400px;
+}
+.studyIntro li{
+	float: left;
+	margin-right: 10px;
+    height: 360px;
+    width: 200px;
+    overflow: hidden;
+}
+/*学习家园(具体信息:触发)*/
+.studyIntro li:hover{
+	transform:translate(0,-30px);
+	-webkit-transform:translate(0,-30px);
+	-moz-transform:translate(0,-30px);
+	-o-transform:translate(0,-30px);
+	-ms-transform:translate(0,-30px);
+}
+/*学习家园(具体信息:图片)*/
+.studyImg{
+	height: 250px;
+    width: 180px;
+}
+.studyText{
+    height: 150px;
+}
+/*学习家园(具体信息:文字介绍)*/
+.studyText p{
+  line-height: 20px;
+  font-size: 12px;
+}
+
+
+
+
+

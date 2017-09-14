@@ -1,0 +1,3 @@
+数据不太多.......
+数据库密码在web-inf/classes/jdbc.properties更改
+tomcat虚拟目录配置为 d:picture/geek ------ /file

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/management.css">
+<script type="text/javascript" src="js/jquery1.js"></script>
+<script type="text/javascript" src="js/management.js"></script>
+<script type="text/javascript" src="js/member.js"></script>
+<script type="text/javascript" src="js/memberadd.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>member</title>
+</head>
+<body style="background: rgba(255,255,255,0.5)">
+<!-- 操作界面头部 -->
+<div class="handleHead">
+    <a class="handleButton add">添加</a>
+    <a class="handleButton del">删除</a>
+    <a class="handleButton change">修改</a>
+    <!--<form action="/selectMember.action" class="find" method="get">-->
+        <!--<select>-->
+            <!--<option>年级</option>-->
+            <!--<option>学号</option>-->
+        <!--</select>-->
+        <input type="text" class="findInput">
+    <!--</form>-->
+    <a class="handleButton searchMember">搜索</a>
+<!--     <a class="handleButtonSave saveadd">保存添加</a>
+    <a class="handleButtonSave savechange">保存修改</a> -->
+</div>
+<!-- 操作界面主体(成员管理) -->
+<div class="handleMain">
+    <form>
+        <table cellspacing="0" cellpadding="0" border="1" class="member">
+            <thead>
+            <tr>
+                <th><input type="checkbox" name="member" id="checkall"></th>
+                <th>姓名</th>
+                <th>电话</th>
+                <th>学号</th>
+                <th>年级</th>
+                <th>团队编号</th>
+                <th>毕业去向</th>
+                <th>照片</th>
+                <th>简介</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </form>
+</div>
+<!-- 添加表单 -->
+<div class="addformmember addform">
+    <form id="memberAccount" enctype="multipart/form-data" class="addformmemberform addformform">
+        <table>
+            <tr>
+                <td>
+                    <label for="memberName" >
+                        姓名
+                    </label>
+                </td>
+                <td>
+                    <input type='text' size='10' name='memberName' placeholder='非空'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="memberPhone">
+                        电话
+                    </label>
+                </td>
+                <td>
+                    <input type='text' size='11' name='memberPhone' placeholder='正确的电话格式'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="oldId">
+                        学号
+                    </label>
+                </td>
+                <td>
+                    <input type='text' size='10' name='oldId' placeholder='非空且以20开头的十位学号'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="memberGrade">
+                        年级
+                    </label>
+                </td>
+                <td>
+                    <input type='text' size='8' name='memberGrade' placeholder='非空的4位数字如(2015)'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="memberTeam">
+                        团队编号
+                    </label>
+                </td>
+                <td>
+                    <input type='text' size='8' name='memberTeam' placeholder='非空'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="memberGradu">
+                        毕业去向
+                    </label>
+                </td>
+                <td>
+                    <input type='text' size='8' name='memberGradu'>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="imageSpace"><img></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="image">
+                        照片
+                    </label>
+                </td>
+                <td>
+                    <input type='file' name='image' accept='image/*'  id='file'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="memberDesc">
+                        简介
+                    </label>
+                </td>
+                <td>
+                    <textarea cols='20' rows='10' name='memberDesc' placeholder='非空'></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                </td>
+                <td>
+                    <input type="reset" name="ses" value="重置">
+                    <input type="button" name="sub" value="提交" id="sub">
+                    <input type="button" name="close" value="关闭" class="close">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

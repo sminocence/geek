@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/management.css">
+<script type="text/javascript" src="js/jquery1.js"></script>
+<script type="text/javascript" src="js/management.js"></script>
+<script type="text/javascript" src="js/master.js"></script>
+<script type="text/javascript" src="js/masteradd.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>master</title>
+</head>
+<body style="background: rgba(255,255,255,0.5)">
+<!-- 操作界面头部 -->
+<div class="handleHead">
+    <a class="handleButton add">添加</a>
+    <a class="handleButton del">删除</a>
+    <a class="handleButton change">修改</a>
+<!--     <a class="handleButtonSave saveadd">保存添加</a>
+    <a class="handleButtonSave savechange">保存修改</a> -->
+</div>
+<!-- 操作界面主体(作品管理) -->
+<div class="handleMain">
+    <form>
+        <table cellspacing="0" cellpadding="0" border="1" class="master">
+            <thead>
+            <tr>
+                <th><input type="checkbox" name="master" id="checkall"></th>
+                <th>作品编号</th>
+                <th>名称</th>
+                <th>图片</th>
+                <th>简介</th>
+                <th>作品链接</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </form>
+</div>
+<!-- 添加表单 -->
+<div class="addformmaster addform">
+    <form id="masterAccount" enctype="multipart/form-data" class="addformmasterform addformform">
+        <table>
+            <tr>
+                <td>
+                    <label for="masterId">
+                        作品编号
+                    </label>
+                </td>
+                <td>
+                    <input type='text' size='8' name='masterId' placeholder='1-4位数字'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="masterName">
+                        名称
+                    </label>
+                </td>
+                <td>
+                    <input type='text' size='8' name='masterName' placeholder='非空'>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="imageSpace"><img></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="image">
+                        照片
+                    </label>
+                </td>
+                <td>
+                    <input type='file' name='image' accept='image/*'  id='file'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="masterDesc">
+                        简介
+                    </label>
+                </td>
+                <td>
+                    <textarea cols='20' rows='10' name='masterDesc' placeholder='非空'></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="masterLink">
+                        作品链接
+                    </label>
+                </td>
+                <td>
+                    <input type='text' size='8' name='masterLink'>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                </td>
+                <td>
+                    <input type="reset" name="ses" value="重置">
+                    <input type="button" name="sub" value="提交" id="sub">
+                    <input type="button" name="close" value="关闭" class="close">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

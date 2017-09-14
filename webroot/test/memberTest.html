@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>member</title>
+</head>
+<body>
+<form action="/addMember.action" enctype="multipart/form-data" method="post">
+    学号<input type="text" name="memberId"><br>
+    姓名<input type="text" name="memberName"><br>
+    团队<input type="text" name="memberTeam"><br>
+    电话<input type="text" name="memberPhone"><br>
+    年级<input type="text" name="memberGrade"><br>
+    毕业去向<input type="text" name="memberGradu"><br>
+    成员介绍<input type="text" name="memberDesc"><br>
+    学习资源图片<input type="file" name="imageName"><br>
+    <input type="submit" value="提交">
+</form>
+<form action="/updateMember.action" enctype="multipart/form-data" method="post">
+    学号<input type="text" name="oldId"><br>
+    新学号<input type="text" name="newId"><br>
+    姓名<input type="text" name="memberName"><br>
+    团队<input type="text" name="memberTeam"><br>
+    电话<input type="text" name="memberPhone"><br>
+    年级<input type="text" name="memberGrade"><br>
+    毕业去向<input type="text" name="memberGradu"><br>
+    成员介绍<input type="text" name="memberDesc"><br>
+    学习资源图片<input type="file" name="image"><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.geek.mapper.SuggestionMapper">
+    <resultMap id="suggestionMap" type="com.geek.model.Suggestion">
+        <id column="s_time" property="time" javaType="Date" jdbcType="TIMESTAMP"></id>
+        <result column="s_phone" property="phone" javaType="String" jdbcType="VARCHAR"></result>
+        <result column="s_view" property="view" javaType="String" jdbcType="VARCHAR"></result>
+    </resultMap>
+    
+    <insert id="insertSuggestion" parameterType="suggestion">
+        INSERT INTO suggestion (s_time,s_phone,s_view)
+        VALUES (#{time},#{phone},#{view})
+    </insert>
+
+    <delete id="deleteSuggestion" parameterType="java.util.Date">
+        DELETE FROM suggestion WHERE s_time = #{0}
+    </delete>
+
+    <delete id="deleteSuggestions" parameterType="java.util.Date">
+        DELETE FROM suggestion WHERE s_time IN
+        <foreach collection="array" item="time" open="(" separator="," close=")">
+            #{time}
+        </foreach>
+    </delete>
+
+    <select id="findAllSuggestion" resultMap="suggestionMap">
+        SELECT s_time ,s_phone ,s_view FROM suggestion
+    </select>
+</mapper>

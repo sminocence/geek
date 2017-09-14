@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.geek.mapper.JoinMapper">
+
+    <resultMap id="joinMap" type="com.geek.model.Join">
+        <id property="joinId" column="j_no" javaType="String" jdbcType="VARCHAR"></id>
+        <result property="joinName" column="j_name" javaType="String" jdbcType="VARCHAR"></result>
+        <result property="joinPhone" column="j_phone" javaType="String" jdbcType="VARCHAR"></result>
+        <result property="joinEmail" column="j_email" javaType="String" jdbcType="VARCHAR"></result>
+    </resultMap>
+
+    <insert id="insertJoin" parameterType="join">
+        INSERT INTO joinus (j_no,j_name,j_phone,j_email)
+        VALUES
+        (#{joinId},#{joinName},#{joinPhone},#{joinEmail})
+    </insert>
+
+    <select id="findJoin" parameterType="java.lang.String" resultMap="joinMap">
+        SELECT
+        j_no ,j_name ,j_phone,j_email
+        FROM joinus WHERE j_no = #{0}
+    </select>
+
+    <select id="findAllJoin" resultMap="joinMap">
+        SELECT
+        j_no ,j_name ,j_phone,j_email
+        FROM joinus
+    </select>
+
+    <delete id="deleteJoin" parameterType="java.lang.String">
+        DELETE FROM joinus WHERE j_no = #{0}
+    </delete>
+
+    <delete id="deleteJoins" parameterType="String">
+        DELETE FROM joinus WHERE j_no IN
+        <foreach collection="array" item="joinId" open="(" separator="," close=")">
+            #{joinId}
+        </foreach>
+    </delete>
+</mapper>

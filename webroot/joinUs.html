@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>加入我们部分</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/joinUs.css">
+</head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/joinUs.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<body>
+    <!-- 加入我们部分 -->
+    <div class="join_us">
+        <!-- 分割线 -->
+        <div class="section_divider">
+           <h2>加入我们</h2>
+        </div>
+        <!-- 内容 -->
+        <div class="joinus_content">
+                <div class="joinus_Lcontent">
+                    <form method="post" id="join_form">
+                        <ul>
+                            <li>
+                                <span class="join_info">姓名</span> 
+                                <input type="text" class="text" id="userName" name="userName" placeholder="请输入你的真实姓名"/>
+                                <span class="spinfo" id="name_info"></span>
+                            </li>
+                            <li>
+                                <span class="join_info">学号</span>
+                                <input type="text" class="text" id="userId" name="userId" placeholder="请输入你的学号"/>
+                                <span class="spinfo" id="id_info"></span>
+                            </li>
+                            <li>
+                                <span class="join_info">电话</span>
+                                <input type="text" class="text" id="userPhone" name="userPhone" placeholder="请输入你的电话号码"/>
+                                <span class="spinfo" id="phone_info"></span>
+                            </li>
+                            <li>
+                                <span class="join_info">邮箱</span>
+                                <input type="text" class="text" id="userEmail" name="userEmail" placeholder="请输入你的邮箱地址"/>
+                                <span class="spinfo" id="email_info"></span>
+                            </li>
+                        </ul>   
+                        <div class="submit">
+                            <input type="button" value="提交" class="sub" id="submit">
+                            <input type="reset" value="清除" class="sub" id="reset">
+                        </div>
+                    </form>
+                    <!-- 加入我们的遮罩层 -->
+                    <!-- <div class="joinus_cover">
+                        <h2>报名已截止</h2>             
+                    </div> -->
+                </div>
+                
+                <!-- 内容之右边 -->
+                <div class="joinus_Rigcontent">
+                        <img src="image/QRcode.png">
+                        <p class="joinus_code">扫描二维码加入我们</p>
+                </div>               
+        </div>
+        <div class="section_divider_bottom"></div>
+    </div>
+    <!-- 尾部版权声明 -->
+    <div class="footer">
+        <ul class="footer_top">
+            <li>版权所有</li>
+            <li>|</li>
+            <li>重庆邮电大学极客网工作室</li>
+            <li>|</li>
+            <li><a href="">意见反馈</a></li>
+        </ul>      
+        <p class="footer_bottom">重庆市南岸区崇文路2号邮电大学经济管理学院</p>           
+    </div>
+</body>
+</html>

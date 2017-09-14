@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>masterpiece</title>
+</head>
+<body>
+    <form action="/addMasterpiece.action" enctype="multipart/form-data" method="post" >
+        学号<input type="text" name="masterId"><br>
+        name<input type="text" name="masterName"><br>
+        pic<input type="file" name="image"><br>
+        desc<input type="text" name="masterDesc"><br>
+        <input type="submit" value="提交">
+    </form>
+
+    --------------------------------------
+    <form action="/updateMasterpiece.action" method="post" enctype="multipart/form-data">
+        id<input type="text" name="masterId"><br>
+        name<input type="text" name="masterName"><br>
+        pic<input type="file" name="image"><br>
+        path<input type="text" name="imagePath"><br>
+        desc<input type="text" name="masterDesc"><br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

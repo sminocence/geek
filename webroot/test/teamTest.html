@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>team</title>
+</head>
+<body>
+    <form action="/addTeam.action" enctype="multipart/form-data" method="post">
+        编号<input type="text" name="teamId"><br>
+        组长<input type="text" name="teamLeader"><br>
+        简介<input type="text" name="teamDesc"><br>
+        名称<input type="text" name="teamName"><br>
+        图片<input type="file" name="image"><br>
+        <input type="submit" value="提交">
+    </form>
+    --------------------------------------
+    <form action="/updateTeam.action" enctype="multipart/form-data" method="post">
+        编号<input type="text" name="teamId"><br>
+        组长<input type="text" name="teamLeader"><br>
+        简介<input type="text" name="teamDesc"><br>
+        名称<input type="text" name="teamName"><br>
+        图片<input type="file" name="image"><br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

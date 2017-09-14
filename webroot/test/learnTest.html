@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>learn</title>
+</head>
+<body>
+    <form action="/addLearn.action" enctype="multipart/form-data" method="post">
+        学习资源编号<input type="text" name="learnId"><br>
+        学习资源名称<input type="text" name="learnName"><br>
+        学习资源类型<select name="learnType">
+        <option value="书籍">书籍</option>
+        <option value="博客">博客</option>
+        <option value="网站">网站</option>
+    </select><br>
+        学习资源图片<input type="file" name="learnImage"><br>
+        学习资源描述<input type="text" name="learnDesc"><br>
+        <input type="submit" value="提交">
+    </form>
+
+<br>
+<br>
+    <form action="/updateLearn.action" enctype="multipart/form-data" method="post">
+        学习资源编号1<input type="text" name="newId"><br>
+        学习资源编号2<input type="text" name="oldId"><br>
+        学习资源名称<input type="text" name="learnName"><br>
+        学习资源类型<select name="learnType">
+        <option value="书籍">书籍</option>
+        <option value="博客">博客</option>
+        <option value="网站">网站</option>
+    </select><br>
+        学习资源图片<input type="file" name="learnImage"><br>
+        学习资源描述<input type="text" name="learnDesc"><br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

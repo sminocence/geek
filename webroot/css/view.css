@@ -1,0 +1,138 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+/*主内容*/
+.pageMain{
+	width: 990px;
+	margin: 0 auto;
+}
+/*头部*/
+.header{
+	text-align: center;
+	width: 990px;
+	height: 200px;
+	letter-spacing: 10px;
+	font-family: "微软雅黑";
+	margin:0 auto; 
+	line-height: 200px;
+	font-size: 40px;
+}
+/*logo*/
+.logo{
+	position: absolute;
+	background: #6093e7;
+	z-index: 100;
+	line-height: 200px;
+	width:200px;
+	height: 200px;
+}
+/*动图*/
+.gifPic{
+	z-index: 1;
+	position: absolute;
+	right: 0;
+}
+/*动图旁文字*/
+.catText{
+	z-index: 1;
+	line-height: 100px;
+	height: 100px;
+	position: absolute;
+	right: 100px;
+}
+/*表单部分*/
+.main{
+	position: relative;
+	width: 990px;
+	margin-top: 15px;
+	height: 570px;
+}
+/*表单部分内部*/
+.mainContent{
+	z-index: 100;
+	background: white;
+	position: absolute;
+	width: 990px;
+	height: 570px;
+	border-radius: 15px;
+	border: 1px solid grey;
+}
+/*意见表单*/
+.viewForm{
+	width:500px;
+	margin: 40px auto;
+	font-size: 20px;
+}
+label{
+	letter-spacing: 3px;
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+}
+.inputTel{
+	line-height: 50px;
+    font-size: 18px;
+    width: 500px;
+    height: 50px;
+    border: 1px solid #6093e7;
+    border-radius: 13px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.inputMessage{
+	line-height: 50px;
+	height: 300px;
+	font-size: 18px;
+	width: 500px;
+	border: 1px solid #6093e7;
+	outline: none;
+	border-radius: 13px;
+	margin-bottom: 20px;
+}
+.button{
+	position: relative;
+	width: 200px;
+	margin: 10px auto;
+}
+.reset{
+	position: absolute;
+	font-size: 16px;
+	margin: 20px;
+	margin-top: 0;
+	left: 0;
+}
+.submit{
+	position: absolute;
+	font-size: 16px;
+	margin: 20px;
+	margin-top: 0;
+	right: 0;
+}
+/*底部*/
+.footer{
+	width: 100%;
+	margin-top: 50px;
+	background-color: #6093e7;
+	color: white;
+}
+/*底部文字信息*/
+.textInfo{
+	text-align: center;
+	margin: 0px auto;
+	padding: 10px;
+	width: 400px;
+}
+/*意见反馈超链接*/
+a{
+	color: white;
+	text-decoration:none; 
+}
+a:hover{
+	transition: color 1s; 
+	color: black;
+}
+p{
+	margin: 5px;
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.geek.mapper.LearnMapper">
+
+    <resultMap id="learnMap" type="com.geek.model.Learn">
+        <id column="l_no" property="learnId" javaType="String" jdbcType="VARCHAR"></id>
+        <result column="l_name" property="learnName" javaType="String" jdbcType="VARCHAR"></result>
+        <result column="l_type" property="learnType" javaType="String" jdbcType="VARCHAR"></result>
+        <result column="l_image" property="imagePath" javaType="String" jdbcType="VARCHAR"></result>
+        <result column="l_desc" property="learnDesc" javaType="String" jdbcType="VARCHAR"></result>
+        <result column="l_link" property="learnLink" javaType="String" jdbcType="VARCHAR"></result>
+    </resultMap>
+
+    <insert id="addLearn" parameterType="learn">
+        INSERT INTO
+        learn(l_no,l_name,l_type,l_image,l_desc,l_link)
+        VALUES
+        (#{learnId},#{learnName},#{learnType},#{imagePath},#{learnDesc},#{learnLink})
+    </insert>
+
+    <delete id="deleteLearn" parameterType="String">
+        DELETE FROM learn WHERE l_no = #{0}
+    </delete>
+
+    <delete id="deleteLearns" parameterType="String">
+        DELETE FROM learn WHERE l_no IN
+        <foreach collection="array" item="learnId" open="(" separator="," close=")">
+            #{learnId}
+        </foreach>
+    </delete>
+
+    <update id="updateLearn" parameterType="learn">
+        UPDATE learn SET
+        l_name = #{learnName},
+        l_type = #{learnType},
+        l_image = #{imagePath},
+        l_desc = #{learnDesc},
+        l_link = #{learnLink}
+        WHERE
+        l_no = #{learnId}
+    </update>
+
+    <update id="updateLearnId" parameterType="String">
+        UPDATE learn SET
+        l_no = #{1}
+        WHERE
+        l_no = #{0}
+    </update>
+
+    <select id="findAllLearn" resultMap="learnMap">
+        SELECT
+        l_no ,l_name ,l_type ,l_image ,l_desc ,l_link
+        FROM learn
+    </select>
+
+    <select id="findLearnByType" parameterType="String" resultMap="learnMap">
+        SELECT
+        l_no ,l_name ,l_type ,l_image ,l_desc ,l_link
+        FROM learn
+        WHERE l_type = #{0}
+    </select>
+
+    <select id="findLearn" parameterType="String" resultMap="learnMap">
+        SELECT
+        l_no ,l_name ,l_type ,l_image ,l_desc ,l_link
+        FROM learn
+        WHERE l_no = #{0}
+    </select>
+
+    <select id="findImagePaths" parameterType="String" resultType="String">
+        SELECT l_image FROM learn WHERE l_no IN
+        <foreach collection="array" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </select>
+</mapper>

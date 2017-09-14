@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.join_us{
+    width: 100%;
+}
+.section_divider{
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid #6093e7;
+    text-align: center;
+    position: relative;
+}
+.section_divider h2{
+    width: 300px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #6093e7;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 10px;
+    font-weight: 400;
+    position: absolute;
+    left: 611px;
+    top: 56px;
+}
+.joinus_content{
+    width: 900px;
+    height: 330px;
+    margin: 0 auto;
+    margin-top: 89px;
+}
+.joinus_Lcontent{
+    width: 530px;
+    height: 300px;
+    float: left;
+    position: relative;
+}
+.joinus_Lcontent li{
+    list-style: none;
+    margin-bottom: 23px;
+}
+.joinus_Lcontent .join_info{
+    font-size: 18px;
+    font-weight: 400;
+    color: #808080;
+}
+.joinus_Lcontent .join_info:hover{
+    color: #6093e7;
+}
+.joinus_Lcontent .text{
+    width: 253px;
+    height: 35px;
+    border: 1px solid #BDBDFF;
+    font-size: 13px;
+    margin-left: 22px;
+    color: #808080;
+    text-align: left;
+}
+.joinus_Lcontent #spinfo{
+    width: 150px;
+    height: 34px;
+    float: right;
+    margin-right: 50px;
+    font-weight: 200;
+    font-size: 12px;
+}
+.joinus_Lcontent .submit{
+    width: 240px;
+    height: 40px;
+    float: left;
+    margin-left: 65px;
+}
+.joinus_Lcontent .sub{
+    width: 79px;
+    height: 30px;
+    background-color: #6093e7;
+    color: #ffffff;
+    font-size: 16px;
+    border:none;
+    margin-right: 22px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+/*.joinus_cover{
+    position: absolute;
+    width: 530px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background: #6093e7;
+    opacity: 0.5;
+}
+.joinus_cover h2{
+    text-align: center;
+    line-height: 300px;
+}*/
+.joinus_Rigcontent{
+    width: 240px;
+    height: 280px;
+    margin: 0 auto;
+    float: left;
+    margin-left: 72px;
+}
+.joinus_Rigcontent img{
+    width: 240px;
+    height: 240px;
+}
+/*扫描二维码*/
+.joinus_code{
+    font-size: 17px;
+    color: #808080;
+    margin: 0 auto;
+    text-align: center;
+}
+.section_divider_bottom{
+    width: 100%;
+    height: 25px;
+    border-bottom: 1px solid #808080;
+    text-align: center;
+    margin-top: 32px;
+}
+.footer{
+    margin-top:10px;
+    width: 100%;
+    height: 40px; 
+}
+.footer_top{
+    width: 325px;
+    height: 20px;
+    margin: 0 auto;
+}
+.footer_top li{
+    list-style: none;
+    float: left;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 14px;
+    color: #4D4D4D;
+}
+.footer_top li a{
+    list-style: none;
+    float: left;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 14px;
+    color: #4D4D4D;
+}
+.footer_top li a:hover{
+    text-decoration: none;
+}
+.footer a{
+    color: #4D4D4D;
+    text-decoration: none;
+}
+.footer a:hover{
+    background-color: #6093e7;
+    color: #ffffff;
+    text-decoration: underline;
+}
+.footer_bottom{
+    width: 289px;
+    height: 20px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #4D4D4D;
+    margin-top: 5px;
+    margin-bottom:10px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/management.css">
+<script type="text/javascript" src="js/jquery1.js"></script>
+<script type="text/javascript" src="js/management.js"></script>
+<script type="text/javascript" src="js/team.js"></script>
+<script type="text/javascript" src="js/teamadd.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>team</title>
+</head>
+<body style="background: rgba(255,255,255,0.5)">
+<!-- 操作界面头部 -->
+<div class="handleHead">
+    <a class="handleButton add">添加</a>
+    <a class="handleButton del">删除</a>
+    <a class="handleButton change">修改</a>
+  <!--   <a class="handleButtonSave saveadd">保存添加</a>
+    <a class="handleButtonSave savechange">保存修改</a> -->
+</div>
+<!-- 操作界面主体(团队管理) -->
+<div class="handleMain">
+    <form>
+        <table cellspacing="0" cellpadding="0" border="1" class="team">
+            <thead>
+            <tr>
+                <th><input type="checkbox" name="team" id="checkall"></th>
+                <th>团队编号</th>
+                <th>团队名称</th>
+                <th>团队负责人</th>
+                <th>照片</th>
+                <th style="width: 200px">简介</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </form>
+</div>
+<!-- 添加表单 -->
+<div class="addformteam addform">
+    <form id="teamAccount" enctype="multipart/form-data" class="addformteamform addformform">
+        <table>
+            <tr>
+                <td>
+                    <label for="teamId">
+                        团队编号
+                    </label>
+                </td>
+                <td>
+                    <input type='text' size='10' name='teamId' placeholder='1-2位数字'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="teamName">
+                        团队名称
+                    </label>
+                </td>
+                <td>
+                    <input type='text' size='10' name='teamName' placeholder='不能为空'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="teamLeader">
+                        团队负责人
+                    </label>
+                </td>
+                <td>
+                    <input type='text' size='10' name='teamLeader' placeholder='以20开头十位数'>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="imageSpace"><img></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="image">
+                        照片
+                    </label>
+                </td>
+                <td>
+                    <input type='file' name='image' accept='image/*' id='file'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="teamDesc">
+                        简介
+                    </label>
+                </td>
+                <td>
+                    <textarea cols='20' rows='10' name='teamDesc' placeholder='不能为空'></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                </td>
+                <td>
+                    <input type="reset" name="ses" value="重置">
+                    <input type="button" name="sub" value="提交" id="sub">
+                    <input type="button" name="close" value="关闭" class="close">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
